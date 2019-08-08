@@ -1,0 +1,566 @@
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8989/
+Hit Ctrl-C to quit.
+
+62.251.161.88 - - [27/Jul/2019 18:03:01] "GET /classify_image/ HTTP/1.1" 405 753
+62.251.161.88 - - [27/Jul/2019 18:03:08] "GET /classify_image/ HTTP/1.1" 405 753
+62.251.161.88 - - [27/Jul/2019 18:03:09] "GET /classify_image/ HTTP/1.1" 405 753
+62.251.161.88 - - [27/Jul/2019 18:03:09] "GET /classify_image/ HTTP/1.1" 405 753
+62.251.161.88 - - [27/Jul/2019 18:03:14] "GET /classify_image/ HTTP/1.1" 405 753
+62.251.161.88 - - [27/Jul/2019 18:34:00] "GET /status/ HTTP/1.1" 200 6
+62.251.161.88 - - [27/Jul/2019 18:34:11] "GET / HTTP/1.1" 404 725
+62.251.161.88 - - [28/Jul/2019 13:27:20] "GET /status/ HTTP/1.1" 200 6
+62.251.161.88 - - [28/Jul/2019 13:27:20] "GET /favicon.ico HTTP/1.1" 404 747
+62.251.161.88 - - [28/Jul/2019 13:27:31] "GET /classify_image/ HTTP/1.1" 405 753
+62.251.161.88 - - [28/Jul/2019 16:39:19] "GET /classify_image/ HTTP/1.1" 405 753
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [28/Jul/2019 16:42:48] "POST /classify_image/ HTTP/1.1" 500 1419
+62.251.161.88 - - [29/Jul/2019 13:48:04] "GET /status/ HTTP/1.1" 200 6
+62.251.161.88 - - [29/Jul/2019 13:48:04] "GET /favicon.ico HTTP/1.1" 404 747
+62.251.161.88 - - [29/Jul/2019 16:11:28] "GET /favicon.ico HTTP/1.1" 404 747
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+KeyError: 'data'
+142.93.233.231 - - [29/Jul/2019 23:14:23] "POST /classify_image/ HTTP/1.1" 500 1301
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:20:04] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:20:36] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:23:35] "POST /classify_image/ HTTP/1.1" 500 1419
+62.251.161.88 - - [30/Jul/2019 00:23:53] "GET /statis HTTP/1.1" 404 737
+62.251.161.88 - - [30/Jul/2019 00:23:53] "GET /robots.txt HTTP/1.1" 404 745
+62.251.161.88 - - [30/Jul/2019 00:23:54] "GET /favicon.ico HTTP/1.1" 404 747
+62.251.161.88 - - [30/Jul/2019 00:23:56] "GET /status HTTP/1.1" 404 737
+62.251.161.88 - - [30/Jul/2019 00:24:01] "GET /state HTTP/1.1" 404 735
+62.251.161.88 - - [30/Jul/2019 00:24:05] "GET / HTTP/1.1" 404 725
+62.251.161.88 - - [30/Jul/2019 00:24:11] "GET /status HTTP/1.1" 404 737
+62.251.161.88 - - [30/Jul/2019 00:24:14] "GET /status/ HTTP/1.1" 200 6
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:24:54] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:25:12] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:25:42] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:26:16] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:26:23] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:26:48] "POST /classify_image/ HTTP/1.1" 500 1419
+62.251.161.88 - - [30/Jul/2019 00:27:00] "GET /classify_image/ HTTP/1.1" 405 753
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:27:55] "POST /classify_image/ HTTP/1.1" 500 1419
+2019-07-30 00:29:31.027963: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-07-30 00:29:31.621982: W tensorflow/core/framework/op_def_util.cc:334] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+62.251.161.88 - - [30/Jul/2019 00:29:32] "POST /classify_image/ HTTP/1.1" 200 97
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:30:11] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:30:22] "POST /classify_image/ HTTP/1.1" 500 1419
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+62.251.161.88 - - [30/Jul/2019 00:30:31] "POST /classify_image/ HTTP/1.1" 500 1419
+62.251.161.88 - - [30/Jul/2019 00:31:06] "POST /classify_image/ HTTP/1.1" 200 97
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+142.93.233.231 - - [30/Jul/2019 02:39:38] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+KeyError: 'data'
+142.93.233.231 - - [30/Jul/2019 02:44:21] "POST /classify_image/ HTTP/1.1" 500 1301
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+62.251.161.88 - - [30/Jul/2019 02:48:38] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+62.251.161.88 - - [30/Jul/2019 02:48:43] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 13, in hello
+    print(request.json['data'])
+KeyError: 'data'
+142.93.233.231 - - [30/Jul/2019 02:50:20] "POST /classify_image/ HTTP/1.1" 500 1301
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+62.251.161.88 - - [30/Jul/2019 02:50:42] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+62.251.161.88 - - [30/Jul/2019 02:50:45] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+62.251.161.88 - - [30/Jul/2019 02:50:46] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 18, in hello
+    path = download_image(info['path'], info['ext'])
+  File "classify.py", line 31, in download_image
+    urllib.urlretrieve(url, filename)
+  File "/usr/lib/python2.7/urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "/usr/lib/python2.7/urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "/usr/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 821, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+IOError: [Errno socket error] [Errno 111] Connection refused
+62.251.161.88 - - [30/Jul/2019 02:50:46] "POST /classify_image/ HTTP/1.1" 500 2442
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 979, in __call__
+    return self.wsgi(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 954, in wsgi
+    out = self._cast(self._handle(environ))
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 19, in hello
+    json[info['path']] = score(path)[0]
+  File "classify.py", line 57, in score
+    {'DecodeJpeg/contents:0': image_data})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1323, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1293, in _run_fn
+    self._extend_graph()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1354, in _extend_graph
+    self._session, graph_def.SerializeToString(), status)
+MemoryError
+62.251.161.88 - - [30/Jul/2019 02:51:10] "POST /classify_image/ HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 979, in __call__
+    return self.wsgi(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 954, in wsgi
+    out = self._cast(self._handle(environ))
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 19, in hello
+    json[info['path']] = score(path)[0]
+  File "classify.py", line 57, in score
+    {'DecodeJpeg/contents:0': image_data})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1323, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1293, in _run_fn
+    self._extend_graph()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1354, in _extend_graph
+    self._session, graph_def.SerializeToString(), status)
+MemoryError
+62.251.161.88 - - [30/Jul/2019 02:51:14] "POST /classify_image/ HTTP/1.1" 500 59
+62.251.161.88 - - [30/Jul/2019 02:51:43] "GET /status/ HTTP/1.1" 200 6
+62.251.161.88 - - [30/Jul/2019 02:51:46] "GET /favicon.ico HTTP/1.1" 404 747
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8989/
+Hit Ctrl-C to quit.
+
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8989/
+Hit Ctrl-C to quit.
+
+2019-08-03 12:14:39.594424: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-08-03 12:14:40.085474: W tensorflow/core/framework/op_def_util.cc:334] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+62.251.161.88 - - [03/Aug/2019 12:14:41] "POST /classify_image/ HTTP/1.1" 200 62
+62.251.161.88 - - [03/Aug/2019 12:14:51] "POST /classify_image/ HTTP/1.1" 200 62
+62.251.161.88 - - [03/Aug/2019 12:15:06] "GET /status/ HTTP/1.1" 200 6
+62.251.161.88 - - [03/Aug/2019 12:15:06] "GET /status/ HTTP/1.1" 200 6
+110.249.212.46 - - [04/Aug/2019 08:07:24] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+110.249.212.46 - - [04/Aug/2019 08:07:24] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+110.249.212.46 - - [04/Aug/2019 08:08:07] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+142.93.233.231 - - [05/Aug/2019 04:08:36] "POST /classify_image/ HTTP/1.1" 200 91
+142.93.233.231 - - [05/Aug/2019 04:10:47] "POST /classify_image/ HTTP/1.1" 200 91
+142.93.233.231 - - [05/Aug/2019 04:12:41] "POST /classify_image/ HTTP/1.1" 200 91
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 979, in __call__
+    return self.wsgi(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 954, in wsgi
+    out = self._cast(self._handle(environ))
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 19, in hello
+    json[info['path']] = score(path)[0]
+  File "classify.py", line 57, in score
+    {'DecodeJpeg/contents:0': image_data})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1323, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1293, in _run_fn
+    self._extend_graph()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1354, in _extend_graph
+    self._session, graph_def.SerializeToString(), status)
+MemoryError
+142.93.233.231 - - [05/Aug/2019 04:13:43] "POST /classify_image/ HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 979, in __call__
+    return self.wsgi(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 954, in wsgi
+    out = self._cast(self._handle(environ))
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 19, in hello
+    json[info['path']] = score(path)[0]
+  File "classify.py", line 57, in score
+    {'DecodeJpeg/contents:0': image_data})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1323, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1293, in _run_fn
+    self._extend_graph()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1354, in _extend_graph
+    self._session, graph_def.SerializeToString(), status)
+MemoryError
+142.93.233.231 - - [05/Aug/2019 04:14:48] "POST /classify_image/ HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 979, in __call__
+    return self.wsgi(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 954, in wsgi
+    out = self._cast(self._handle(environ))
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1740, in wrapper
+    rv = callback(*a, **ka)
+  File "classify.py", line 19, in hello
+    json[info['path']] = score(path)[0]
+  File "classify.py", line 57, in score
+    {'DecodeJpeg/contents:0': image_data})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1323, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1293, in _run_fn
+    self._extend_graph()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1354, in _extend_graph
+    self._session, graph_def.SerializeToString(), status)
+MemoryError
+142.93.233.231 - - [05/Aug/2019 04:15:47] "POST /classify_image/ HTTP/1.1" 500 59
+Bottle v0.12.13 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8989/
+Hit Ctrl-C to quit.
+
+2019-08-05 20:48:57.495429: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-08-05 20:48:57.973741: W tensorflow/core/framework/op_def_util.cc:334] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+142.93.233.231 - - [05/Aug/2019 20:48:58] "POST /classify_image/ HTTP/1.1" 200 110
+110.249.212.46 - - [06/Aug/2019 13:20:52] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+110.249.212.46 - - [06/Aug/2019 13:20:53] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+110.249.212.46 - - [06/Aug/2019 13:21:14] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+110.249.212.46 - - [06/Aug/2019 13:21:14] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
+110.249.212.46 - - [06/Aug/2019 13:21:36] "GET http://110.249.212.46/testget?q=23333&port=8989 HTTP/1.1" 404 809
